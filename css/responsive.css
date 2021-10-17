@@ -1,0 +1,98 @@
+
+/* PC >= 1024*/
+@media (min-width: 64em) { 
+    .nav__bar-mobile,
+    .nav__bar-image-close {
+        display: none;
+    }
+
+    }
+
+
+/* Tablet and mobile < 1023px */
+@media (max-width: 63.9375em) { 
+    .nav__bar {
+        display: none;
+        width: 80%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .T-overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .nav__bar-image-close {
+        padding: 8px;
+    }
+
+    .nav__bar-image-icon {
+        font-size: 4em;
+    }
+
+    .nav__bar-image {
+        display: flex;
+        justify-content: space-between;
+    
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .nav__bar {
+        width: 40%;
+    }
+}
+
+/* mobile <739 */
+@media (max-width: 46.1875em) { 
+   .content__main {
+    flex-wrap: wrap;
+   }
+
+    .content__main-first-row,
+    .content__main-second-row,
+    .content__main-third-row {
+        width: 100%;
+    }
+    
+    .image_myself,
+    .contact__method,
+    .Upgrade__change,
+    .info {
+        flex-wrap: wrap;
+    }
+
+    .Upgrade__basic,
+    .Upgrade__pro,
+    .Upgrade__premium,
+    .image_myself-full,
+    .Contact__method--email,
+    .Contact__method--location,
+    .Contact__method--phone,
+    .info_row,
+    .Download__resume,
+    .Sign,
+    .Send {
+        width: 100%;
+    }
+
+    .Send {
+        display: block;
+    }
+
+
+   
+}
